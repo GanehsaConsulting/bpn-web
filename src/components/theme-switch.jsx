@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { HiMoon, HiSun } from 'react-icons/hi2';
 import { PiSun, PiMoon } from "react-icons/pi";
 
 export default function ThemeSwitch({ className }) {

@@ -5,7 +5,7 @@ export const HomeBanner = () => {
         <section className="mx-3 mt-3 mb-3" style={{ height: "calc(100vh - 5.35rem)" }}>
             <div className="grid grid-cols-10 gap-3 h-full">
                 {/* Left Hero */}
-                <div className="relative col-span-7 rounded-2xl overflow-hidden">
+                <div className="relative col-span-7 rounded-main overflow-hidden">
                     <Image
                         fill
                         className="object-cover"
@@ -45,7 +45,7 @@ export const HomeBanner = () => {
                 {/* Right Sidebar */}
                 <div className="col-span-3 flex flex-col gap-3">
                     {/* Top Card with Image */}
-                    <div className="relative flex-1 rounded-2xl overflow-hidden group">
+                    <div className="relative flex-1 rounded-main overflow-hidden group">
                         <Image
                             fill
                             className="object-cover"
@@ -71,7 +71,7 @@ export const HomeBanner = () => {
                     </div>
 
                     {/* Bottom Card with Image */}
-                    <div className="relative flex-1 rounded-2xl overflow-hidden group">
+                    <div className="relative flex-1 rounded-main overflow-hidden group">
                         <Image
                             fill
                             className="object-cover"

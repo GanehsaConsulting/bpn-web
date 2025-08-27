@@ -85,7 +85,7 @@ export const MegaMenuNavbar = ({
                         </div>
                         <div className="swap-on">
                             <div className={iconClassName}><RxCross2 className="text-[18px] md:text-xl" /></div>
-                        </div>
+                    </div>
                     </label>
                 )}
             </div>

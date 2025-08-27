@@ -2,10 +2,11 @@ import { Lato, Open_Sans, Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Navbar } from "@/components/navbar";
+import { CustomScrollbar } from "@/components/custom-scrollbar";
 
 const r = Lato({
   subsets: ["latin"],
-  weight: ["100", "300", "400",  "700", "900"]
+  weight: ["100", "300", "400", "700", "900"]
 });
 
 export const metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           <Navbar>
             {children}
           </Navbar>
+          <CustomScrollbar />
         </ThemeProvider>
       </body>
     </html>

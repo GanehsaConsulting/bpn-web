@@ -68,12 +68,12 @@ export const Navbar = ({ children }) => {
         <>
             {isScrolled && (
                 <>
-                    <div className="md:fixed top-0 left-0 right-0 h-35 z-40 pointer-events-none linear-blur-to-b" />
+                    <div className="md:sticky mx-2 top-2 left-2 right-2 w-auto rounded-main h-[52px] z-30 backdrop-blur-lg" />
                 </>
             )}
             <div className={`navbar z-50 sticky top-2 left-2 right-2 w-auto mx-2 px-2 rounded-main !min-h-13 !h-13
-                ${isScrolled ? "bg-lightColor/70 dark:bg-darkColor/70 shadow-custom border border-neutral-300/30 dark:border-secondaryGray/10" : "bg-lightColor dark:bg-darkColor mt-2"}
-                `}
+              ${expandedId && "!bg-lightColor dark:!bg-darkColor"}
+              ${isScrolled ? "bg-lightColor/70 dark:bg-darkColor/70 shadow-custom border border-neutral-300/30 dark:border-secondaryGray/10" : "bg-lightColor dark:bg-darkColor mt-2"}`}
             >
                 <div className="navbar-start">
                     <Logo />
