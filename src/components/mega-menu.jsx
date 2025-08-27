@@ -60,7 +60,7 @@ export const MegaMenuNavbar = ({
             <div className="z-[100] relative">
                 {title ? (
                     <div
-                        className={`flex items-center gap-2 !z-999 px-3 py-1 rounded-main transition-all duration-300 text-sm relative hover:underline decoration-[1.5px] underline-offset-2 hover:!font-medium hover:text-darkColor dark:text-lightColor text-muted-foreground
+                        className={`cursor-pointer flex items-center gap-2 !z-999 px-3 py-1 rounded-main transition-all duration-300 text-sm relative hover:underline decoration-[1.5px] underline-offset-2 hover:!font-medium hover:text-darkColor dark:text-lightColor text-muted-foreground
                             ${isActive ? "underline !font-medium" : ""}
                             ${isExpanded && "underline !font-medium"}
                         `}
