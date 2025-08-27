@@ -1,14 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lato, Open_Sans, Roboto } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
+import { Navbar } from "@/components/navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const r = Lato({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["100", "300", "400",  "700", "900"]
 });
 
 export const metadata = {
@@ -18,11 +15,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${r.className} antialiased`}
       >
-        {children}
+        <ThemeProvider enableSystem={true} attribute="class">
+          <Navbar>
+            {children}
+          </Navbar>
+        </ThemeProvider>
       </body>
     </html>
   );
