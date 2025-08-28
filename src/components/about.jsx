@@ -6,6 +6,7 @@ import {
     PiTrophy,     // mirip FaTrophy (trophy/achievement)
     PiHandshake   // mirip FaHandshake (handshake/partnership)
 } from "react-icons/pi";
+import { Title } from "./title";
 export const About = () => {
     const whyUs = [
         {
@@ -37,9 +38,9 @@ export const About = () => {
         <section className="margin">
             <div className="grid grid-cols-2 gap-12">
                 <div>
-                    <h1 className="font-bold text-lg">
+                    <Title>
                         About Us
-                    </h1>
+                    </Title>
                     <div className="grid grid-cols-2 gap-7 my-14">
                         <p className="text-sm text-justify text-neutral-500 dark:text-neutral-300">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae facilis sint architecto saepe nam, deleniti alias doloremque, provident pariatur ratione ea sequi magni maxime. Repellat sint excepturi modi vitae quis.
@@ -71,7 +72,7 @@ export const About = () => {
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <h3 className="font-semibold text-md">{item.title}</h3>
+                                    <h3 className="font-semibold text-xl">{item.title}</h3>
                                     <p className="text-sm text-justify text-neutral-600 dark:text-neutral-300">
                                         {item.description}
                                     </p>

@@ -39,11 +39,8 @@ export const WhyUs = () => {
                 {/* Desktop Layout */}
                 <div className="hidden lg:grid grid-cols-4 gap-3">
                     {whyChooseUs.map((el, idx) => (
-                        <div
-                            className=""
-                            key={idx}
-                        >
-                            <div className="flex items-center gap-2 p-4 bg-main-3 rounded-main pb-15">
+                        <div key={idx}>
+                            <div className="flex items-center gap-2 p-4 bg-main-3 text-darkColor dark:bg-main-1 rounded-main pb-15">
                                 <div className="text-2xl p-3 bg-main-4 w-fit rounded-full">
                                     {el.icon}
                                 </div>
@@ -52,7 +49,7 @@ export const WhyUs = () => {
                                     {el.title}
                                 </h1>
                             </div>
-                            <p className="-mt-12 shadow-mainShadow p-4 bg-white dark:bg-darkColor rounded-main text-lg text-justify text-muted-foreground h-40">
+                            <p className="-mt-12 p-4 bg-white border-main-3 dark:border-main-1 border-2 dark:bg-black rounded-main text-lg text-justify text-muted-foreground h-40">
                                 {el.description}
                             </p>
                         </div>
