@@ -65,8 +65,8 @@ export const About = () => {
                         {whyUs.map((item, idx) => (
                             <div key={item.title} className={`${idx % 3 === 0 ? "bg-main-3/60" : "bg-sec-1/80"} h-full p-4 rounded-main flex flex-col justify-between gap-3`}>
                                 <div className="flex items-center mb-5">
-                                    <div className="text-lg p-3 flex items-center justify-center bg-white dark:bg-sec-2/20 rounded-full">
-                                        <span className={`${idx % 3 === 0 ? "text-main-1" : "text-sec-1"} brightness-80 `}>
+                                    <div className="text-lg p-3 flex items-center justify-center bg-white dark:bg-black rounded-full">
+                                        <span className={`${idx % 3 === 0 ? "text-main-1" : "text-sec-1"} dark:brightness-105 brightness-80 `}>
                                             {item.icon}
                                         </span>
                                     </div>

@@ -76,7 +76,7 @@ export const ArticleReccomendations = () => {
                         href={`/article/${slugify(e.categories)}/${slugify(e.title)}`}
                     >
                         <div
-                            className={`${idx === 0 && "md:ml-10 ml-5"} ${idx === DataArticles.length - 1 && "md:mr-10 mr-5"} md:min-w-[25lvw] min-w-[85lvw] h-[70lvh] rounded-3xl overflow-hidden group relative brightness-95`}
+                            className={`${idx === 0 && "md:ml-10 ml-5"} ${idx === DataArticles.length - 1 && "md:mr-10 mr-5"} md:min-w-[25lvw] min-w-[85lvw] h-[70lvh] rounded-main overflow-hidden group relative brightness-95`}
                         >
                             <Image
                                 width={400}
