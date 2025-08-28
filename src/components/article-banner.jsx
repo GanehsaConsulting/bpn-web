@@ -17,7 +17,7 @@ export const ArticleBanner = () => {
                     />
 
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
+                    <div className="absolute inset-0 bg∆-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
                     <div className="absolute inset-0 bg-gradient-to-b h-[30%] from-black/20 via-black/5 to-transparent"></div>
 
                     <div className="absolute top-5 left-5">
@@ -25,7 +25,7 @@ export const ArticleBanner = () => {
                             Recent Articles
                         </h1>
                     </div>
-                    
+
                     {/* Small Card Bottom Left */}
                     <div className="absolute bottom-2 left-2 right-2 bg-white/10 backdrop-blur-lg w-auto p-4 border border-muted/30 rounded-secondary text-white flex gap-2">
                         <div className="flex flex-col gap-2">
