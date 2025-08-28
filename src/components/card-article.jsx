@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export const CardArticle = () => {
     return (
-        <section className="margin">
+        <section className="margin !my-5">
             <div className="grid grid-cols-4 gap-3">
                 {DataArticles.map((e, idx) => (
                     <a
