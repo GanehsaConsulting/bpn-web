@@ -13,7 +13,7 @@ export const SearchArticle = () => {
                 <div className="hidden md:flex items-center gap-2">
                     <Input
                         className={"w-100 bg-lightColor dark:bg-darkColor"}
-                        placeholder="Search title..."
+                placeholder="Search title..."
                     />
                     <Button
                         className={"bg-lightColor dark:bg-darkColor"}

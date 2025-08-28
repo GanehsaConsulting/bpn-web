@@ -27,7 +27,7 @@ export const ArticleBanner = () => {
                     </div>
 
                     {/* Small Card Bottom Left */}
-                    <div className="absolute bottom-2 left-2 right-2 bg-white/10 backdrop-blur-lg w-auto p-4 border border-muted/30 rounded-secondary text-white flex gap-2">
+                    <div className="absolute bottom-2 left-2 right-2 bg-white/10 dark:bg-darkColor/20 backdrop-blur-lg w-auto p-4 border border-muted/30 dark:border-muted-foreground/20 rounded-secondary text-white flex gap-2">
                         <div className="flex flex-col gap-2">
                             <h3 className="font-semibold text-2xl">
                                 {main.title}
@@ -47,7 +47,7 @@ export const ArticleBanner = () => {
                 {/* Right Sidebar */}
                 <div className="col-span-4 flex flex-col gap-3">
                     {DataArticles.slice(1, 3).map((el, idx) => (
-                        <div className="relative flex-1 rounded-main overflow-hidden group">
+                        <div key={idx} className="relative flex-1 rounded-main overflow-hidden group">
                             <Image
                                 fill
                                 className="object-cover"
@@ -55,7 +55,7 @@ export const ArticleBanner = () => {
                                 alt="Sidebar Menu"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent"></div>
-                            <div className="absolute bottom-2 left-2 right-2 bg-white/10 backdrop-blur-[6px] w-auto p-4 border border-muted/30 rounded-secondary text-white flex gap-2">
+                            <div className="absolute bottom-2 left-2 right-2 bg-white/10 dark:bg-darkColor/20 backdrop-blur-[6px] w-auto p-4 border border-muted/30 dark:border-muted-foreground/20 rounded-secondary text-white flex gap-2">
                                 <div className="flex flex-col gap-2">
                                     <h3 className="font-semibold text-lg">
                                         {el.title}

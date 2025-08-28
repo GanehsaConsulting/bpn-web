@@ -1,4 +1,5 @@
 import { DataArticles } from "@/app/system"
+import { slugify } from "@/helper/slugify"
 import Image from "next/image"
 
 export const CardArticle = () => {
@@ -8,7 +9,7 @@ export const CardArticle = () => {
                 {DataArticles.map((e, idx) => (
                     <a
                         key={idx}
-                        href=""
+                        href={`/article/${slugify(e.categories)}/${slugify(e.title)}`}
                     >
                         <div
                             className="relative rounded-main overflow-hidden group h-[70vh]"
@@ -23,7 +24,7 @@ export const CardArticle = () => {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
 
                             {e.trending === true && (
-                                <div className="absolute top-3 left-3 bg-sec-1 w-fit h-fit py-1.5 px-2 border border-muted/30 rounded-secondary">
+                                <div className="absolute top-3 left-3 bg-sec-1 w-fit h-fit py-1.5 px-2 rounded-secondary">
                                     <p className="text-xs font-semibold text-darkColor">
                                         Trending
                                     </p>

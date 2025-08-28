@@ -8,6 +8,7 @@ export const MegaMenuNavbar = ({
     title,
     expandedId,
     setExpandedId,
+    isScrolled,
     children,
     arrowVisibility = "block",
     icon,
@@ -103,7 +104,7 @@ export const MegaMenuNavbar = ({
                         top: `${navbarHeight + 8}px`, // Use dynamic navbar height
                     }}
                 >
-                    <div className={`mt-19 no-scrollbar`}>
+                    <div className={`${isScrolled && "md:mx-9"} duration-300 mt-19 no-scrollbar`}>
                         {children}
                     </div>
                 </div>
