@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { Navbar } from "@/components/navbar";
 import { CustomScrollbar } from "@/components/custom-scrollbar";
+import { Footer } from "@/components/footer";
 
 const r = Lato({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
           <Navbar>
             {children}
           </Navbar>
+          <Footer />
           <CustomScrollbar />
         </ThemeProvider>
       </body>
