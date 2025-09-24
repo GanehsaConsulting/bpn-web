@@ -37,7 +37,7 @@ export const WhyUs = () => {
             <section className="mt-10" >
 
                 {/* Desktop Layout */}
-                <div className="hidden lg:grid grid-cols-4 gap-3">
+                <div className=" grid lg:grid-cols-4 gap-3 overflow-x-auto">
                     {whyChooseUs.map((el, idx) => (
                         <div key={idx}>
                             <div className="flex items-center gap-2 p-4 bg-main-3 text-darkColor dark:bg-main-1 rounded-main pb-15">

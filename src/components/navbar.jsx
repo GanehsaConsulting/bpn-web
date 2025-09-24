@@ -10,11 +10,22 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { LuSearch } from "react-icons/lu";
 import { AlertDialogComponent } from "./ui/alert-dialog";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Logo = () => (
-  <Link href="/" className="flex items-center z-999 ml-3">
-    <h1 className="font-[850] font-montserrat tracking-widest uppercase text-[22px] -ml-1 bg-gradient-to-br from-main-1 dark:from-white from-10% dark:from-5% via-baseColorDark dark:via-baseColorLight via-40% dark:via-60% to-main-3 dark:to-main-1 to-99% bg-clip-text text-transparent">
-      Anantara
+  <Link href="/" className="flex items-center gap-1 z-[999] ml-3">
+    <img
+      className="w-7 h-7 dark:grayscale dark:brightness-10000"
+      src="/logo.png"
+      alt="logo"
+    />
+    {/* Mobile (BPN) */}
+    <h1 className="block sm:hidden font-[800] font-montserrat tracking-widest text-xl -ml-1 bg-gradient-to-br from-main-1 dark:from-white from-10% dark:text-white via-40% dark:via-60% to-main-3 dark:to-main-1 to-99% bg-clip-text text-transparent">
+      BPN
+    </h1>
+    {/* Desktop (full text) */}
+    <h1 className="hidden sm:block font-[800] font-montserrat tracking-widest text-xl -ml-1 bg-gradient-to-br from-main-1 dark:from-white from-10% dark:text-white via-40% dark:via-60% to-main-3 dark:to-main-1 to-99% bg-clip-text text-transparent">
+      Bifudo Partner Nusantara
     </h1>
   </Link>
 );
@@ -71,7 +82,7 @@ export const Navbar = ({ children }) => {
     <>
       {isScrolled && (
         <>
-          <div className="md:fixed top-0 left-0 right-0 h-20 z-40 pointer-events-none linear-blur-navbar" />
+          <div className="fixed top-0 left-0 right-0 h-20 z-40 pointer-events-none linear-blur-navbar" />
           <div
             className={`${
               isScrolled && "mx-10"
@@ -84,7 +95,7 @@ export const Navbar = ({ children }) => {
               ${expandedId && "!bg-lightColor dark:!bg-darkColor"}
               ${
                 isScrolled
-                  ? "mx-10 bg-lightColor/60 dark:bg-darkColor/40 shadow-custom border border-neutral-300/50 dark:border-secondaryGray/10"
+                  ? "sm:mx-10 bg-lightColor/60 dark:bg-darkColor/40 shadow-custom border border-neutral-300/50 dark:border-secondaryGray/10"
                   : "bg-lightColor dark:bg-darkColor mt-2"
               }`}
       >
@@ -145,15 +156,36 @@ export const Navbar = ({ children }) => {
               <LuSearch />
             </Button>
           </div>
-          <ThemeSwitch />
+          <ThemeSwitch className="z-10" />
+          <li>
+            <div className="relative z-100 sm:hidden">
+              <MegaMenuNavbar
+                id="service-mobile"
+                //   title="Services"
+                icon={<RxHamburgerMenu />}
+                iconClassName="rounded-full p-2 bg-white dark:bg-black md:hover:bg-main-1 md:dark:hover:bg-main-2"
+                expandedId={expandedId}
+                setExpandedId={setExpandedId}
+                className="absolute"
+                isActive={isServicePage}
+                isScrolled={isScrolled}
+                isMobile={true}
+              >
+                <ServiceMenu
+                  onClose={() => setExpandedId(null)}
+                  expandedId={expandedId}
+                />
+              </MegaMenuNavbar>
+            </div>
+          </li>
         </div>
       </div>
 
       <div
-        className={`md:flex hidden fixed top-0 transition-opacity duration-300 z-10 bg-black/50 dark:bg-white/50
+        className={`flex  fixed top-0 transition-opacity duration-300 z-10 bg-black/50 dark:bg-white/50
                 ${
                   expandedId
-                    ? "opacity-100 backdrop-blur-none md:backdrop-blur-[4px] w-screen h-screen"
+                    ? "opacity-100 backdrop-blur-[4px] w-screen h-screen"
                     : "opacity-0 pointer-events-none"
                 } 
             `}
