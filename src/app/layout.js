@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 import { Navbar } from "@/components/navbar";
 import { CustomScrollbar } from "@/components/custom-scrollbar";
 import { Footer } from "@/components/footer";
+import { ComingSoon } from "@/components/coming-soon";
 
 const r = Lato({
   subsets: ["latin"],
@@ -23,7 +24,8 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar>
-            {children}
+            {/* {children} */}
+            <ComingSoon />
           </Navbar>
           <Footer />
           <CustomScrollbar />

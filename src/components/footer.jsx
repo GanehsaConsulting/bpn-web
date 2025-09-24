@@ -5,7 +5,7 @@ export const Footer = () => {
         <>
             <footer className="mx-5 md:mx-10 mt-10 my-5 relative">
                 <div className="absolute -z-50 -bottom-10 -left-30  h-50  bg-gradient-to-t from-sec-1/20 via-sec-1/10 to-sec-1/5 rounded-full"></div>
-                <div className="grid sm:grid-cols-6 gap-4 mb-17">
+                {/* <div className="grid sm:grid-cols-6 gap-4 mb-17">
                     <div className="col-span-3 flex flex-col">
                         <h1 className="font-[850] font-montserrat tracking-widest uppercase text-[22px] bg-gradient-to-br from-main-1 dark:from-white from-10% dark:from-5% via-baseColorDark dark:via-baseColorLight via-40% dark:via-60% to-main-3 dark:to-main-1 to-99% bg-clip-text text-transparent">
                             Anantara
@@ -52,12 +52,12 @@ export const Footer = () => {
                             ))}
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <hr className="border-t border-muted-foreground/30 my-5" />
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0 text-center sm:text-left">
-                        <h2 className="text-xl font-bold">Luxury Resort</h2>
-                        <p className="text-sm">© 2024 Luxury Resort. All rights reserved.</p>
+                        <h2 className="text-xl font-bold">Bifudo Partner Nusantara</h2>
+                        <p className="text-sm">© 2024 BPN. All rights reserved.</p>
                     </div>
                     <div className="flex space-x-4 text-sm">
                         <a href="#" className="hover:underline">Privacy Policy</a>
