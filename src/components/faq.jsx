@@ -33,7 +33,7 @@ export const FaqComponent = () => {
 
     return (
         <section className="margin">
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid sm:grid-cols-2 gap-12">
                 <div className="flex flex-col justify-between">
                     <div>
                         <Title>
@@ -43,10 +43,10 @@ export const FaqComponent = () => {
                             Contact Us if you have any other questions or need further assistance.
                         </p>
                     </div>
-                    <div className="flex items-end gap-2">
-                        <div className="w-50 h-50 bg-main-1 rounded-main flex items-center justify-center"></div>
-                        <div className="w-40 h-40 bg-sec-4 rounded-main flex items-center justify-center"></div>
-                        <div className="w-30 h-30 bg-sec-1 rounded-main flex items-center justify-center"></div>
+                    <div className="flex items-end gap-2 sm:mt-0 mt-9">
+                        <div className="sm:w-50 sm:h-50 w-25 h-25 bg-main-1 sm:rounded-main rounded-third flex items-center justify-center"></div>
+                        <div className="sm:w-40 sm:h-40 w-20 h-20 bg-sec-4 sm:rounded-main rounded-third flex items-center justify-center"></div>
+                        <div className="sm:w-30 sm:h-30 w-15 h-15 bg-sec-1 sm:rounded-main rounded-third flex items-center justify-center"></div>
                     </div>
                 </div>
                 <div>

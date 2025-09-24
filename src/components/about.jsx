@@ -36,17 +36,17 @@ export const About = () => {
     ];
     return (
         <section className="margin">
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid lg:grid-cols-2  gap-12">
                 <div>
                     <Title>
                         About Us
                     </Title>
-                    <div className="grid grid-cols-2 gap-7 my-14">
-                        <p className="text-sm text-justify text-neutral-500 dark:text-neutral-300">
+                    <div className="grid lg:grid-cols-2 gap-7 my-14">
+                        <p className="text-sm text-start text-neutral-500 dark:text-neutral-300">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae facilis sint architecto saepe nam, deleniti alias doloremque, provident pariatur ratione ea sequi magni maxime. Repellat sint excepturi modi vitae quis.
                         </p>
 
-                        <p className="text-sm text-justify text-neutral-500 dark:text-neutral-300">
+                        <p className="text-sm text-start text-neutral-500 dark:text-neutral-300">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, corrupti obcaecati suscipit labore architecto fugit corporis consectetur nobis ullam est soluta nam commodi. Sapiente doloremque nihil officia excepturi fuga repellat?
                         </p>
                     </div>
@@ -61,7 +61,7 @@ export const About = () => {
                     </div>
                 </div>
                 <div className=" ">
-                    <div className="grid grid-cols-2 gap-3 h-full ">
+                    <div className="grid lg:grid-cols-2 gap-3 h-full ">
                         {whyUs.map((item, idx) => (
                             <div key={item.title} className={`${idx % 3 === 0 ? "bg-main-3/60" : "bg-sec-1/80"} h-full p-4 rounded-main flex flex-col justify-between gap-3`}>
                                 <div className="flex items-center mb-5">
@@ -73,7 +73,7 @@ export const About = () => {
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <h3 className="font-semibold text-xl">{item.title}</h3>
-                                    <p className="text-sm text-justify text-neutral-600 dark:text-neutral-300">
+                                    <p className="text-sm text-start text-neutral-600 dark:text-neutral-300">
                                         {item.description}
                                     </p>
                                 </div>

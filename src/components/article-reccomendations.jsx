@@ -46,7 +46,7 @@ export const ArticleReccomendations = () => {
                         disabled={isAtStart}
                         className={`
                         ${isAtStart ? '!opacity-50 !cursor-not-allowed' : ''} 
-                        cursor-pointer rounded-full shadow-lg w-8 h-8 sm:w-10 sm:h-10 bg-sec-5 dark:bg-sec-4 text-lightColor
+                        cursor-pointer rounded-full shadow-lg w-8 h-8 sm:w-10 sm:h-10 bg-main-1 dark:bg-sec-4 text-lightColor
                     `}
                     >
                         <IoIosArrowBack className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -56,7 +56,7 @@ export const ArticleReccomendations = () => {
                         size={"icon"}
                         className={`
                         ${isAtEnd ? '!opacity-50 !cursor-not-allowed' : ''} 
-                        cursor-pointer rounded-full shadow-lg w-8 h-8 sm:w-10 sm:h-10 bg-sec-5 dark:bg-sec-4 text-lightColor
+                        cursor-pointer rounded-full shadow-lg w-8 h-8 sm:w-10 sm:h-10 bg-main-2 dark:bg-sec-4 text-lightColor
                     `}
                         onClick={() => carouselRef?.scrollBy({ left: scrollAmount(), behavior: "smooth" })}
                         disabled={isAtEnd}
