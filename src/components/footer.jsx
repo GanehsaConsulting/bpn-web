@@ -3,8 +3,8 @@ import Link from "next/link";
 export const Footer = () => {
     return (
         <>
-            <footer className="mx-5 md:mx-10 my-5 relative">
-            <div className="absolute -z-50 -bottom-10 -left-30 w-[200%] h-50  bg-gradient-to-t from-sec-1/20 via-sec-1/10 to-sec-1/5 rounded-full"></div>
+            <footer className="mx-5 md:mx-10 mt-10 my-5 relative">
+                <div className="absolute -z-50 -bottom-10 -left-30 w-[200%] h-50  bg-gradient-to-t from-sec-1/20 via-sec-1/10 to-sec-1/5 rounded-full"></div>
                 <div className="grid grid-cols-6 gap-4 mb-17">
                     <div className="col-span-3 flex flex-col">
                         <h1 className="font-[850] font-montserrat tracking-widest uppercase text-[22px] bg-gradient-to-br from-main-1 dark:from-white from-10% dark:from-5% via-baseColorDark dark:via-baseColorLight via-40% dark:via-60% to-main-3 dark:to-main-1 to-99% bg-clip-text text-transparent">
@@ -20,7 +20,7 @@ export const Footer = () => {
                                 Quick Links
                             </p>
                             {["Home", "About Us", "Services", "Contact", "Blog"].map((el) => (
-                                <Link href=""
+                                <Link key={el} href=""
                                     className="link text-sm link-hover"
                                 >
                                     {el}
@@ -32,7 +32,7 @@ export const Footer = () => {
                                 Quick Links
                             </p>
                             {["Home", "About Us", "Services", "Contact", "Blog"].map((el) => (
-                                <Link href=""
+                                <Link key={el} href=""
                                     className="link text-sm link-hover"
                                 >
                                     {el}
@@ -44,7 +44,7 @@ export const Footer = () => {
                                 Quick Links
                             </p>
                             {["Home", "About Us", "Services", "Contact", "Blog"].map((el) => (
-                                <Link href=""
+                                <Link key={el} href=""
                                     className="link text-sm link-hover"
                                 >
                                     {el}

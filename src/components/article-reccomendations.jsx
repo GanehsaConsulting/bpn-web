@@ -10,6 +10,7 @@ import { slugify } from "@/helper/slugify"
 import Image from "next/image"
 import { Title } from "./title"
 import { IoIosArrowBack } from "react-icons/io";
+import Link from "next/link";
 
 export const ArticleReccomendations = () => {
     const [carouselRef, setCarouselRef] = useState(null);
@@ -71,12 +72,12 @@ export const ArticleReccomendations = () => {
                 className="carousel w-full gap-5"
             >
                 {DataArticles.slice(0, 6).map((e, idx) => (
-                    <a
+                    <Link
                         key={idx}
                         href={`/article/${slugify(e.categories)}/${slugify(e.title)}`}
                     >
                         <div
-                            className={`${idx === 0 && "md:ml-10 ml-5"} ${idx === DataArticles.length - 1 && "md:mr-10 mr-5"} md:min-w-[25lvw] min-w-[85lvw] h-[70lvh] rounded-main overflow-hidden group relative brightness-95`}
+                            className={`${idx === 0 && "md:ml-10 ml-5"} ${idx === DataArticles.length - 1 && "md:mr-10 mr-5"} relative md:min-w-[25lvw] min-w-[85lvw] h-[70lvh] rounded-main overflow-hidden group brightness-95`}
                         >
                             <Image
                                 width={400}
@@ -85,7 +86,7 @@ export const ArticleReccomendations = () => {
                                 src={e.thumbnailImg}
                                 alt={e.title}
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+                            <div className="absolute inset-0 left-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent h-50 self-end" />
 
                             {e.trending === true && (
                                 <div className="absolute top-3 left-3 bg-sec-1 w-fit h-fit py-1.5 px-2 rounded-secondary">
@@ -95,12 +96,12 @@ export const ArticleReccomendations = () => {
                                 </div>
                             )}
                             <div className="absolute bottom-3 left-3 right-3 space-y-2">
-                                <div className="bg-white/10 dark:bg-darkColor/20 backdrop-blur-[6px] w-fit h-full py-1.5 px-2 border border-muted/30 dark:border-muted-foreground/20 rounded-secondary">
+                                <div className="bg-white/10 dark:bg-darkColor/20 backdrop-blur-[6px] w-fit h-full py-1.5 px-2 border border-muted/30 dark:border-muted-foreground/20 rounded-secondary backdrop-brightness-125">
                                     <p className="text-xs font-semibold text-white opacity-80">
                                         {e.categories}
                                     </p>
                                 </div>
-                                <div className="bg-white/10 dark:bg-darkColor/20 backdrop-blur-[6px] w-auto h-full py-3 px-4 border border-muted/30 dark:border-muted-foreground/20 rounded-secondary">
+                                <div className="bg-white/10 dark:bg-darkColor/20 backdrop-blur-[6px] w-auto h-full py-3 px-4 border border-muted/30 dark:border-muted-foreground/20 rounded-secondary backdrop-brightness-125">
                                     <h1 className="font-semibold text-lg text-white drop-shadow line-clamp-2">
                                         {e.title}
                                     </h1>
@@ -110,7 +111,7 @@ export const ArticleReccomendations = () => {
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </Link>
                 ))}
             </div>
         </section>

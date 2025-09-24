@@ -74,7 +74,7 @@ export const Navbar = ({ children }) => {
             )}
             <div className={`navbar z-50 sticky top-2 left-2 right-2 w-auto mx-2 px-2 rounded-main !min-h-13 !h-13 duration-300 ease-in-out
               ${expandedId && "!bg-lightColor dark:!bg-darkColor"}
-              ${isScrolled ? "mx-10 bg-lightColor/60 dark:bg-darkColor/40 shadow-custom border border-neutral-300/30 dark:border-secondaryGray/10" : "bg-lightColor dark:bg-darkColor mt-2"}`}
+              ${isScrolled ? "mx-10 bg-lightColor/60 dark:bg-darkColor/40 shadow-custom border border-neutral-300/50 dark:border-secondaryGray/10" : "bg-lightColor dark:bg-darkColor mt-2"}`}
             >
                 <div className="navbar-start">
                     <Logo />
