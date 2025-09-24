@@ -29,7 +29,7 @@ const nextConfig = {
             },
             {
                 protocol: "https",
-                hostname: "media.cnn.com",
+                hostname: "jp-nusantara.com",
             },
             {
                 protocol: "https",
