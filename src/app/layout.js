@@ -13,7 +13,7 @@ const r = Lato({
 
 export const metadata = {
   title: "Bifudo Partner Nusantara",
-  description: "Your Reliable Shift Management Partner",
+  description: "A social project that connects culture and heart",
 };
 
 export default function RootLayout({ children }) {
