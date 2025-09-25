@@ -3,7 +3,7 @@ import Link from "next/link";
 export const Footer = () => {
     return (
         <>
-            <footer className="mx-5 md:mx-10 mt-10 my-5 relative">
+            <footer className="mx-5 md:mx-10  my-5 relative">
                 <div className="absolute -z-50 -bottom-10 -left-30  h-50  bg-gradient-to-t from-sec-1/20 via-sec-1/10 to-sec-1/5 rounded-full"></div>
                 {/* <div className="grid sm:grid-cols-6 gap-4 mb-17">
                     <div className="col-span-3 flex flex-col">
@@ -55,9 +55,9 @@ export const Footer = () => {
                 </div> */}
                 <hr className="border-t border-muted-foreground/30 my-5" />
                 <div className="flex flex-col md:flex-row justify-between items-center">
-                    <div className="mb-4 md:mb-0 text-center sm:text-left">
+                    <div className="mb-4 md:mb-0 text-center sm:text-left flex flex-col gap-2">
                         <h2 className="text-xl font-bold">Bifudo Partner Nusantara</h2>
-                        <p className="text-sm">© 2024 BPN. All rights reserved.</p>
+                        <p className="text-sm">© 2025 BPN. All rights reserved.</p>
                     </div>
                     <div className="flex space-x-4 text-sm">
                         <a href="#" className="hover:underline">Privacy Policy</a>

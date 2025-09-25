@@ -76,7 +76,7 @@ export const ComingSoon = () => {
   };
 
   return (
-    <section className="mx-3 mt-3 min-h-screen">
+    <section className="mx-3 mt-3">
       {/* Main Hero Container */}
       <div className="relative w-full h-[calc(100vh-6rem)] min-h-[500px] rounded-main overflow-hidden">
         {/* Slideshow Background dengan AnimatePresence */}
