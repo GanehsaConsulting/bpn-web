@@ -4,8 +4,21 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.gradient-primary {
+  @apply bg-gradient-to-tr from-main-1 to-sec-3;
+}
+
+.gradient-secondary {
+  @apply bg-gradient-to-tr from-main-2 to-main-3;
+}
+
+.gradient-combine {
+  @apply bg-gradient-to-r from-main-1 to-main-2;
+}
+
+
 @theme {
-  /* Primer Colors */
+  /* Primary Colors */
   --color-sec-1: #B2A5FF;
   --color-sec-2: #0B1E2F;
   --color-sec-3: #B2A5FF;

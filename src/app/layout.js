@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar>
-            {/* {children} */}
-            <ComingSoon />
+            {children}
+            {/* <ComingSoon /> */}
           </Navbar>
           <Footer />
           <CustomScrollbar />
