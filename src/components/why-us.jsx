@@ -40,7 +40,7 @@ export const WhyUs = () => {
                 <div className=" grid lg:grid-cols-4 gap-3 overflow-x-auto">
                     {whyChooseUs.map((el, idx) => (
                         <div key={idx}>
-                            <div className="flex items-center gap-2 p-4 bg-main-3 text-darkColor dark:bg-main-1 rounded-main pb-15">
+                            <div className="flex items-center gap-2 p-4 gradient-combine text-white dark:bg-main-1 rounded-main pb-15">
                                 <div className="text-2xl p-3 bg-main-4 w-fit rounded-full">
                                     {el.icon}
                                 </div>

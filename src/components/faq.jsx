@@ -36,7 +36,7 @@ export const FaqComponent = () => {
             <div className="grid sm:grid-cols-2 gap-12">
                 <div className="flex flex-col justify-between">
                     <div>
-                        <Title>
+                        <Title className="text-main-1" >
                             Frequently Asked <br /> Questions
                         </Title>
                         <p className="max-w-70 text-neutral-500 dark:text-neutral-300 mt-5">
@@ -54,7 +54,7 @@ export const FaqComponent = () => {
                         {FAQ.map((el, idx) => (
                             <AccordionItem key={idx} value={idx.toString()} className={"!border-neutral-500 dark:border-neutral-400"}>
                                 <AccordionTrigger >
-                                    <div className="py-5 flex items-center gap-3 text-lg">
+                                    <div className="py-5 flex items-center gap-3 text-lg text-main">
                                         <p className="mr-5">
                                             0{idx + 1}
                                         </p>

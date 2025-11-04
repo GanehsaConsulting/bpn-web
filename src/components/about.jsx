@@ -63,7 +63,7 @@ export const About = () => {
                 <div className=" ">
                     <div className="grid lg:grid-cols-2 gap-3 h-full ">
                         {whyUs.map((item, idx) => (
-                            <div key={item.title} className={`${idx % 3 === 0 ? "bg-main-3/60" : "bg-sec-1/80"} h-full p-4 rounded-main flex flex-col justify-between gap-3`}>
+                            <div key={item.title} className={`${idx % 3 === 0 ? "gradient-primary" : "gradient-secondary"} h-full p-4 rounded-main flex flex-col justify-between gap-3`}>
                                 <div className="flex items-center mb-5">
                                     <div className="text-lg p-3 flex items-center justify-center bg-white dark:bg-black rounded-full">
                                         <span className={`${idx % 3 === 0 ? "text-main-1" : "text-sec-1"} dark:brightness-105 brightness-80 `}>
@@ -71,9 +71,9 @@ export const About = () => {
                                         </span>
                                     </div>
                                 </div>
-                                <div className="flex flex-col gap-2">
+                                <div className="flex flex-col gap-2 text-white">
                                     <h3 className="font-semibold text-xl">{item.title}</h3>
-                                    <p className="text-sm text-start text-neutral-600 dark:text-neutral-300">
+                                    <p className="text-sm text-start ">
                                         {item.description}
                                     </p>
                                 </div>
